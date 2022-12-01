@@ -1,0 +1,68 @@
+package Controllers;
+
+import Models.Enums.*;
+import Models.FoodItem;
+import Models.Order;
+import Models.OrderDetail;
+import Services.FoodItemService;
+import Services.OrderService;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+
+public class OrderController {
+    private FoodItemService foodItemService;
+    private OrderService orderService;
+
+    public OrderController() {
+        foodItemService = new FoodItemService();
+        orderService = new OrderService();
+    }
+
+    public ArrayList<Order> getOrders() {
+        return orderService.getOrders();
+    }
+
+    public double getCartTotal() {
+        return foodItemService.getCartTotal();
+    }
+
+    public void removeCartItem(int index) {
+        foodItemService.removeCartItem(index);
+    }
+
+    public FoodItem addFoodToCart(int quantity, FoodType foodType, Size size, Topping topping, Drink drink) {
+        FoodItem foodItem;
+        if (!topping.equals(Topping.NONE) && !drink.equals(Drink.NONE)) {
+            foodItem = foodItemService.createFoodItemWithToppingWithDrink(quantity, foodType, size, topping, drink);
+        } else if (!topping.equals(Topping.NONE) && drink.equals(Drink.NONE)) {
+            foodItem = foodItemService.createFoodItemWithTopping(quantity, foodType, size, topping);
+        } else if (topping.equals(Topping.NONE) && !drink.equals(Drink.NONE)) {
+            foodItem = foodItemService.createFoodItemWithDrink(quantity, foodType, size, drink);
+        } else {
+            foodItem = foodItemService.createFoodItem(quantity, foodType, size);
+        }
+
+        return foodItem;
+    }
+
+    public void proceedOrder(EventType eventType, String customerName) {
+        LocalDate dateObj = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        String date = dateObj.format(formatter);
+
+        int orderId = orderService.addOrder(new Order(date, eventType, customerName));
+
+        if (orderId > 0) {
+            for (FoodItem foodItem : foodItemService.getFoodItemList()) {
+                int foodItemId = foodItemService.addFoodItem(foodItem);
+
+                if (foodItemId > 0) {
+                    orderService.addOrderDetail(new OrderDetail(orderId, foodItemId));
+                }
+            }
+        }
+
+    }
+}

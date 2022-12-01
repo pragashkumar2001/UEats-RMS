@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9f46d856-61ff-492f-97bf-e210fe0ad91f" name="Changes" comment="order form before table">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Views/CustomerCreateOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/CustomerCreateOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controllers/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DB/DatabaseConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DB/DatabaseConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/BaseModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/BaseModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Department.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Enums/Drink$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Enums/Drink$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Enums/Drink$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Enums/Drink$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Enums/Drink$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Enums/Drink$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Enums/Drink$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Enums/Drink$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Enums/Drink$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Enums/Drink$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Enums/Drink.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Enums/Drink.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Enums/EventType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Enums/EventType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Enums/FoodType$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Enums/FoodType$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Enums/FoodType$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Enums/FoodType$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Enums/FoodType$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Enums/FoodType$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Enums/FoodType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Enums/FoodType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Enums/Size$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Enums/Size$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Enums/Size$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Enums/Size$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Enums/Size$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Enums/Size$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Enums/Size.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Enums/Size.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Enums/Topping$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Enums/Topping$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Enums/Topping$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Enums/Topping$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Enums/Topping$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Enums/Topping$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Enums/Topping$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Enums/Topping$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Enums/Topping.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Enums/Topping.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/FoodItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/FoodItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Material.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Material.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/OrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/OrderDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Supplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Supplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Services/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Services/EmailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Services/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Services/OrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Views/CustomerCreateOrder$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Views/CustomerCreateOrder$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Views/CustomerCreateOrder$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Views/CustomerCreateOrder$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Views/CustomerCreateOrder$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Views/CustomerCreateOrder$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Views/CustomerCreateOrder$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Views/CustomerCreateOrder$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Views/CustomerCreateOrder$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Views/CustomerCreateOrder$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Views/CustomerCreateOrder$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Views/CustomerCreateOrder$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Views/CustomerCreateOrder$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Views/CustomerCreateOrder$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Views/CustomerCreateOrder$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Views/CustomerCreateOrder$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Views/CustomerCreateOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Views/CustomerCreateOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Views/CustomerDashboard$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Views/CustomerDashboard$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Views/CustomerDashboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Views/CustomerDashboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Views/CustomerViewOrder$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Views/CustomerViewOrder$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Views/CustomerViewOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Views/CustomerViewOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Views/EmployeeDashboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Views/EmployeeDashboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Views/LoginView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Views/LoginView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Views/LoginView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Views/LoginView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2HUhoxKDAzobqnORsTWR1UBKq1B" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ToolWindowBuild.ShowToolbar": "false",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "212",
+    "last_opened_file_path": "D:/Pragash/SLIIT/SEM 2/OOP/UEATS/UEats-RMS/RMS/src/main/java/Views",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Pragash\SLIIT\SEM 2\OOP\UEATS\UEats-RMS\RMS\src\main\java\Views" />
+      <recent name="D:\Pragash\SLIIT\SEM 2\OOP\UEATS\UEats-RMS\RMS\src\main\java\Views\a" />
+      <recent name="D:\Pragash\SLIIT\SEM 2\OOP\UEATS\UEats-RMS\RMS\src\main\java\Services" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Pragash\SLIIT\SEM 2\OOP\UEATS\UEats-RMS\RMS\src\main\java\Views" />
+      <recent name="D:\Pragash\SLIIT\SEM 2\OOP\UEATS\UEats-RMS\RMS\src\main\java\Views\Customer" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Models" />
+      <recent name="Models.Enums" />
+      <recent name="Controllers" />
+      <recent name="Services" />
+      <recent name="DB" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.LoginView">
+    <configuration name="CustomerCreateOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Views.CustomerCreateOrder" />
+      <module name="RMS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Views.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerViewOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Views.CustomerViewOrder" />
+      <module name="RMS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Views.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Views.LoginView" />
+      <module name="RMS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Views.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="customerReceiptView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Views.customerReceiptView" />
+      <module name="RMS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Views.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LoginView" />
+        <item itemvalue="Application.customerReceiptView" />
+        <item itemvalue="Application.CustomerViewOrder" />
+        <item itemvalue="Application.CustomerCreateOrder" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f46d856-61ff-492f-97bf-e210fe0ad91f" name="Changes" comment="" />
+      <created>1668345750167</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668345750167</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="order form before table" />
+    <option name="LAST_COMMIT_MESSAGE" value="order form before table" />
+  </component>
+</project>

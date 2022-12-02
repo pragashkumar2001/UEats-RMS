@@ -9,7 +9,7 @@ import Models.Enums.EventType;
 public class Order extends BaseModel {
     private String orderDate;
     private EventType eventType;
-    private String customerName;
+    private String customerEmail;
     private double billAmount;
     private String status;
     private String empEmail;
@@ -17,10 +17,10 @@ public class Order extends BaseModel {
     public Order() {
     }
 
-    public Order(String orderDate, EventType eventType, String customerName) {
+    public Order(String orderDate, EventType eventType, String customerEmail) {
         this.orderDate = orderDate;
         this.eventType = eventType;
-        this.customerName= customerName;
+        this.customerEmail= customerEmail;
     }
 
     public String getOrderDate() {
@@ -39,12 +39,12 @@ public class Order extends BaseModel {
         this.eventType = eventType;
     }
 
-    public String getCustomerName() {
-        return customerName;
+    public String getCustomerEmail() {
+        return customerEmail;
     }
 
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
+    public void setCustomerEmail(String customerEmail) {
+        this.customerEmail = customerEmail;
     }
 
     public double getBillAmount() {

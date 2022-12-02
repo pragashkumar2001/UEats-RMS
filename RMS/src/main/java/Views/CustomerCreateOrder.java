@@ -64,7 +64,7 @@ public class CustomerCreateOrder extends JFrame {
                     orderController.removeCartItem(index);
                     lblTotalAmount.setText("Rs. " + orderController.getCartTotal());
                 } catch (ArrayIndexOutOfBoundsException ex) {
-                    System.out.println("Please select an item to clear!!");
+                    JOptionPane.showMessageDialog(backPanel, "Please select an item to clear!!!", "Error", 0);
                 }
             }
         });
@@ -191,7 +191,7 @@ public class CustomerCreateOrder extends JFrame {
                 orderController.proceedOrder(selectedEventType, "Customer");
                 JOptionPane.showMessageDialog(backPanel, "Order Placed Successfully!!!", "Success", 1);
 
-                CustomerViewOrder customerViewOrderUi = new CustomerViewOrder();
+                ManageOrder manageOrderUi = new ManageOrder();
             }
         });
     }

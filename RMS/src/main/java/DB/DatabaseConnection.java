@@ -5,7 +5,10 @@ import Models.Order;
 
 import java.sql.*;
 import java.util.ArrayList;
-
+/**
+ * @author Srikanthan P.K
+ * @SA_No SA22401694
+ */
 public class DatabaseConnection {
     private final String URL = "jdbc:mysql://localhost:3306/oop_rms_db";
     private final String UName = "root";

@@ -3,7 +3,10 @@ package Views;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+/**
+ * @author Srikanthan P.K
+ * @SA_No SA22401694
+ */
 public class LoginView extends JFrame {
     private JLabel lblUserName;
     private JLabel lblPassword;
@@ -24,7 +27,7 @@ public class LoginView extends JFrame {
                     case "e":
                         EmployeeDashboard employeeDashboardUi = new EmployeeDashboard();
                         employeeDashboardUi.setContentPane(employeeDashboardUi.backPanel);
-                        employeeDashboardUi.setTitle("UEATS: Admin Dashboard");
+                        employeeDashboardUi.setTitle("UEATS: Employee Dashboard");
                         employeeDashboardUi.setSize(400, 300);
                         employeeDashboardUi.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                         employeeDashboardUi.setLocationRelativeTo(null);
@@ -39,7 +42,6 @@ public class LoginView extends JFrame {
                         customerDashboardUi.setLocationRelativeTo(null);
                         customerDashboardUi.setVisible(true);
                         break;
-
                 }
 
 
@@ -111,7 +113,7 @@ public class LoginView extends JFrame {
 
         loginViewUi = new LoginView();
         loginViewUi.setContentPane(loginViewUi.backPanel);
-        loginViewUi.setTitle("Group Project 1.0");
+        loginViewUi.setTitle("User Login 1.0");
         loginViewUi.setSize(400, 300);
         loginViewUi.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         loginViewUi.setLocationRelativeTo(null);

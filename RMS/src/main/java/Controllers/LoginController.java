@@ -3,7 +3,10 @@ package Controllers;
 import Models.User;
 
 import java.util.ArrayList;
-
+/**
+ * @author Srikanthan P.K
+ * @SA_No SA22401694
+ */
 public class LoginController {
     ArrayList<User> userDB;
     public LoginController()

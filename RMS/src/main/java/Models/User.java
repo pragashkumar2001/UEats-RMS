@@ -1,5 +1,8 @@
 package Models;
-
+/**
+ * @author Srikanthan P.K
+ * @SA_No SA22401694
+ */
 public class User {
     private String UserName;
     private String Password;

@@ -3,7 +3,10 @@ package Views;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+/**
+ * @author Srikanthan P.K
+ * @SA_No SA22401694
+ */
 public class CustomerDashboard extends JFrame {
     private JButton createOrderButton;
     private JButton bookSeatButton;

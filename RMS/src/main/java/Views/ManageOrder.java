@@ -12,19 +12,19 @@ import java.awt.event.ActionListener;
  * @author Srikanthan P.K
  * @SA_No SA22401694
  */
-public class CustomerViewOrder extends JFrame {
+public class ManageOrder extends JFrame {
     private JTable table1;
     private JButton viewReceiptButton;
     private JButton assignEmployeeButton;
     private JButton updateStatusButton;
     private JButton addOrderButton;
-    private static CustomerViewOrder customerViewOrderUi;
+    private static ManageOrder manageOrderUi;
     private DefaultTableModel model;
     private OrderController orderController;
     public JPanel backPanel;
 
 
-    public CustomerViewOrder() {
+    public ManageOrder() {
         model = new DefaultTableModel();
         orderController = new OrderController();
 
@@ -41,12 +41,12 @@ public class CustomerViewOrder extends JFrame {
 
     public void loadTable() {
         model.addColumn("Order Id");
-        model.addColumn("Customer Name");
+        model.addColumn("Customer Email");
         model.addColumn("Date");
         model.addColumn("Event Type");
         model.addColumn("Total Amount");
         model.addColumn("Status");
-        model.addColumn("Employee");
+        model.addColumn("Employee Email");
         table1.setModel(model);
         table1.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);
         table1.setFillsViewportHeight(true);
@@ -55,20 +55,20 @@ public class CustomerViewOrder extends JFrame {
             if (order.getEmpEmail() == null) {
                 order.setEmpEmail("Unassigned");
             }
-            model.addRow(new Object[]{order.getId(), order.getCustomerName(), order.getOrderDate(), order.getEventType(), "Rs." + order.getBillAmount(), order.getStatus(), order.getEmpEmail()});
+            model.addRow(new Object[]{order.getId(), order.getCustomerEmail(), order.getOrderDate(), order.getEventType(), "Rs." + order.getBillAmount(), order.getStatus(), order.getEmpEmail()});
         }
 
     }
 
 
     public static void main(String[] args) {
-        customerViewOrderUi = new CustomerViewOrder();
-        customerViewOrderUi.setContentPane(customerViewOrderUi.backPanel);
-        customerViewOrderUi.setTitle("Order Manager 1.0");
-        customerViewOrderUi.setSize(1000, 600);
-        customerViewOrderUi.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        customerViewOrderUi.setLocationRelativeTo(null);
-        customerViewOrderUi.setVisible(true);
+        manageOrderUi = new ManageOrder();
+        manageOrderUi.setContentPane(manageOrderUi.backPanel);
+        manageOrderUi.setTitle("Order Manager 1.0");
+        manageOrderUi.setSize(1000, 600);
+        manageOrderUi.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        manageOrderUi.setLocationRelativeTo(null);
+        manageOrderUi.setVisible(true);
 
     }
 }

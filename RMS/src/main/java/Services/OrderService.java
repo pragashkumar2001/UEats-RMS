@@ -24,14 +24,14 @@ public class OrderService {
         ArrayList<Order> orders = new ArrayList<>();
 
         try {
-            String query = "SELECT o.id, o.customerName, o.orderDate, o.eventType, o.status, SUM(fi.totalAmount) as billAmount, o.empEmail FROM orders o, order_detail od, food_item fi WHERE o.id = od.orderId AND od.foodItemId = fi.id GROUP By o.id;";
+            String query = "SELECT o.id, o.customerEmail, o.orderDate, o.eventType, o.status, SUM(fi.totalAmount) as billAmount, o.empEmail FROM orders o, order_detail od, food_item fi WHERE o.id = od.orderId AND od.foodItemId = fi.id GROUP By o.id;";
             ResultSet rs = singleConn.ExecuteGetQuery(query);
 
             if (rs != null) {
                 while (rs.next()) {
                     Order order = new Order();
                     order.setId(rs.getInt("id"));
-                    order.setCustomerName(rs.getString("customerName"));
+                    order.setCustomerEmail(rs.getString("customerEmail"));
                     order.setOrderDate(rs.getString("orderDate"));
                     order.setEventType(EventType.valueOf(rs.getString("eventType")));
                     order.setStatus(rs.getString("status"));
@@ -50,7 +50,7 @@ public class OrderService {
 
     public int addOrder(Order order) {
         try {
-            String query = "INSERT INTO `orders` (`orderDate`, `customerName`, `eventType`, `empEmail`) VALUES ('" + order.getOrderDate() + "', '" + order.getCustomerName() + "', '" + order.getEventType() + "', '" + order.getEmpEmail() + "');";
+            String query = "INSERT INTO `orders` (`orderDate`, `customerEmail`, `eventType`, `empEmail`) VALUES ('" + order.getOrderDate() + "', '" + order.getCustomerEmail() + "', '" + order.getEventType() + "', '" + order.getEmpEmail() + "');";
             int id = singleConn.InsertQueryReturnInt(query);
             return id;
         } catch (Exception ex) {
@@ -67,6 +67,4 @@ public class OrderService {
             System.out.println("Cannot insert a order detail");
         }
     }
-
-
 }

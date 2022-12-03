@@ -192,6 +192,7 @@ public class CustomerCreateOrder extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 orderController.proceedOrder(selectedEventType, LoginController.currentUser.getEmail());
                 JOptionPane.showMessageDialog(backPanel, "Order Placed Successfully!!!", "Success", 1);
+                dispose();
             }
         });
     }

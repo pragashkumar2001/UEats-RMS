@@ -22,11 +22,8 @@ public class ManageOrder extends JFrame {
     private OrderController orderController;
 
     public JPanel backPanel;
-    private static ManageOrder manageOrderUi;
-
 
     public ManageOrder() {
-        manageOrderUi = this;
         model = new DefaultTableModel();
         orderController = new OrderController();
 
@@ -35,7 +32,7 @@ public class ManageOrder extends JFrame {
         addOrderButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                manageOrderUi.dispose();
+                dispose();
                 CustomerCreateOrder customerCreateOrderUi = new CustomerCreateOrder();
                 customerCreateOrderUi.setContentPane(customerCreateOrderUi.backPanel);
                 customerCreateOrderUi.setTitle("UEATS: Employee Create Order Form");

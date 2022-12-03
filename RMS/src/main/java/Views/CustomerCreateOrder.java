@@ -1,5 +1,6 @@
 package Views;
 
+import Controllers.LoginController;
 import Controllers.OrderController;
 import Models.Enums.*;
 import Models.FoodItem;
@@ -38,6 +39,7 @@ public class CustomerCreateOrder extends JFrame {
     private Size selectedSize;
     private Topping selectedTopping;
     private Drink selectedDrink;
+
     public JPanel backPanel;
     private JLabel lblTotalAmount;
     private JButton btnClearItem;
@@ -188,10 +190,9 @@ public class CustomerCreateOrder extends JFrame {
         btnPlaceOrder.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                orderController.proceedOrder(selectedEventType, "Customer");
+                orderController.proceedOrder(selectedEventType, LoginController.currentUser.getEmail());
                 JOptionPane.showMessageDialog(backPanel, "Order Placed Successfully!!!", "Success", 1);
-
-                ManageOrder manageOrderUi = new ManageOrder();
+                dispose();
             }
         });
     }

@@ -4,30 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f46d856-61ff-492f-97bf-e210fe0ad91f" name="Changes" comment="order form before table">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Models/Email.java" afterDir="false" />
+    <list default="true" id="9f46d856-61ff-492f-97bf-e210fe0ad91f" name="Changes" comment="updated code v2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RMS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RMS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DB/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DB/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Services/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Services/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Views/CustomerCreateOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/CustomerCreateOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/CustomerDashboard.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/CustomerDashboard.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/CustomerDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/CustomerDashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/CustomerViewOrder.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/ManageOrder.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/CustomerViewOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/ManageOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/EmployeeDashboard.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/EmployeeDashboard.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/EmployeeDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/EmployeeDashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/LoginView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/LoginView.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/LoginView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Views/ManageOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/ManageOrder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -148,6 +128,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="order form before table" />
-    <option name="LAST_COMMIT_MESSAGE" value="order form before table" />
+    <MESSAGE value="updated code v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated code v2" />
   </component>
 </project>

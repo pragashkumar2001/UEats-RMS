@@ -17,10 +17,10 @@ public class Order extends BaseModel {
     public Order() {
     }
 
-    public Order(String orderDate, EventType eventType, String customerEmail) {
+    public Order(String orderDate, EventType eventType, String userEmail) {
         this.orderDate = orderDate;
         this.eventType = eventType;
-        this.customerEmail= customerEmail;
+        this.customerEmail= userEmail;
     }
 
     public String getOrderDate() {

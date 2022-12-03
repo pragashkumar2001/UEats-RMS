@@ -18,13 +18,15 @@ public class ManageOrder extends JFrame {
     private JButton assignEmployeeButton;
     private JButton updateStatusButton;
     private JButton addOrderButton;
-    private static ManageOrder manageOrderUi;
     private DefaultTableModel model;
     private OrderController orderController;
+
     public JPanel backPanel;
+    private static ManageOrder manageOrderUi;
 
 
     public ManageOrder() {
+        manageOrderUi = this;
         model = new DefaultTableModel();
         orderController = new OrderController();
 
@@ -33,8 +35,14 @@ public class ManageOrder extends JFrame {
         addOrderButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                manageOrderUi.dispose();
                 CustomerCreateOrder customerCreateOrderUi = new CustomerCreateOrder();
-//                Navigation.pageOnDispose(viewOrderUi, createOrderUi, createOrderUi.backPanel);
+                customerCreateOrderUi.setContentPane(customerCreateOrderUi.backPanel);
+                customerCreateOrderUi.setTitle("UEATS: Employee Create Order Form");
+                customerCreateOrderUi.setSize(1000, 600);
+                customerCreateOrderUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                customerCreateOrderUi.setLocationRelativeTo(null);
+                customerCreateOrderUi.setVisible(true);
             }
         });
     }
@@ -57,18 +65,6 @@ public class ManageOrder extends JFrame {
             }
             model.addRow(new Object[]{order.getId(), order.getCustomerEmail(), order.getOrderDate(), order.getEventType(), "Rs." + order.getBillAmount(), order.getStatus(), order.getEmpEmail()});
         }
-
-    }
-
-
-    public static void main(String[] args) {
-        manageOrderUi = new ManageOrder();
-        manageOrderUi.setContentPane(manageOrderUi.backPanel);
-        manageOrderUi.setTitle("Order Manager 1.0");
-        manageOrderUi.setSize(1000, 600);
-        manageOrderUi.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        manageOrderUi.setLocationRelativeTo(null);
-        manageOrderUi.setVisible(true);
 
     }
 }

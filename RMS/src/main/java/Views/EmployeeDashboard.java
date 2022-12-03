@@ -8,23 +8,42 @@ import java.awt.event.ActionListener;
  * @author Srikanthan P.K
  * @SA_No SA22401694
  */
-public class EmployeeDashboard  extends JFrame{
-    private JButton manageOrderButton;
-    private JButton manageEmployeeButton;
+public class EmployeeDashboard extends JFrame {
+    private JButton btnManageOrder;
+    private JButton btnManageEmployee;
     public JPanel backPanel;
-    
-    public EmployeeDashboard(){
+    private JButton btnManageSupplier;
+    private JButton btnGenerateReport;
 
-        manageOrderButton.addActionListener(new ActionListener() {
+    public EmployeeDashboard() {
+        btnManageOrder.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 ManageOrder manageOrderUi = new ManageOrder();
                 manageOrderUi.setContentPane(manageOrderUi.backPanel);
-                manageOrderUi.setTitle("UEATS: Employee Dashboard");
+                manageOrderUi.setTitle("UEATS: Manage Order");
                 manageOrderUi.setSize(1000, 600);
                 manageOrderUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 manageOrderUi.setLocationRelativeTo(null);
                 manageOrderUi.setVisible(true);
+            }
+        });
+        btnManageSupplier.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        btnManageEmployee.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        btnGenerateReport.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
             }
         });
     }

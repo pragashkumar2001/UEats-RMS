@@ -4,37 +4,62 @@ package Models;
  * @SA_No SA22401694
  */
 public class User {
-    private String UserName;
-    private String Password;
-    private String Type;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String password;
+    private String role;
 
-    public User(String userName, String password, String type) {
-        UserName = userName;
-        Password = password;
-        Type = type;
+    public User(String email, String password) {
+        this.email = email;
+        this.password = password;
     }
 
-    public String getUserName() {
-        return UserName;
+    public User(String firstName, String lastName, String email, String password, String role) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+        this.role = role;
     }
 
-    public void setUserName(String userName) {
-        UserName = userName;
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPassword() {
-        return Password;
+        return password;
     }
 
     public void setPassword(String password) {
-        Password = password;
+        this.password = password;
     }
 
-    public String getType() {
-        return Type;
+    public String getRole() {
+        return role;
     }
 
-    public void setType(String type) {
-        Type = type;
+    public void setRole(String role) {
+        this.role = role;
     }
 }

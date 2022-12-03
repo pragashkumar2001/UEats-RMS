@@ -4,15 +4,32 @@ package Models;
  * @SA_No SA22401694
  */
 public class User {
-    private String UserName;
+
+    public static String firstName;
+
+    public static String lastName;
+
+    public static String email;
+
+    public static String role;
+    public static String password;
+
     private String Password;
+
     private String Type;
+    private String UserName;
+
 
     public User(String userName, String password, String type) {
         UserName = userName;
         Password = password;
         Type = type;
     }
+
+    public User(String firstName, String lastName, String email, String role, String password) {
+
+    }
+
 
     public String getUserName() {
         return UserName;

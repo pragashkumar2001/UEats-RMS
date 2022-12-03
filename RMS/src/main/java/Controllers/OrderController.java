@@ -10,7 +10,10 @@ import Services.OrderService;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-
+/**
+ * @author Srikanthan P.K
+ * @SA_No SA22401694
+ */
 public class OrderController {
     private FoodItemService foodItemService;
     private OrderService orderService;
@@ -47,12 +50,12 @@ public class OrderController {
         return foodItem;
     }
 
-    public void proceedOrder(EventType eventType, String customerName) {
+    public void proceedOrder(EventType eventType, String userEmail) {
         LocalDate dateObj = LocalDate.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         String date = dateObj.format(formatter);
 
-        int orderId = orderService.addOrder(new Order(date, eventType, customerName));
+        int orderId = orderService.addOrder(new Order(date, eventType, userEmail));
 
         if (orderId > 0) {
             for (FoodItem foodItem : foodItemService.getFoodItemList()) {

@@ -3,12 +3,15 @@ package Models;
  * @author Srikanthan P.K
  * @SA_No SA22401694
  */
-public class User extends BaseModel{
+public class User extends BaseModel {
     private String firstName;
     private String lastName;
     private String email;
     private String password;
     private String role;
+
+    public User() {
+    }
 
     public User(String email, String password) {
         this.email = email;

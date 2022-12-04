@@ -1,17 +1,14 @@
 package Views;
 
-import Controllers.registrationController;
+import Controllers.RegistrationController;
 import Models.User;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import static Models.User.*;
-
 public class RegistrationForm extends JDialog{
     private JTextField txtFName;
-    private JTextField txtPhoneNumber;
     private JTextField txtPassword;
     private JButton btnCancel;
     private JButton btnRegister;
@@ -19,7 +16,7 @@ public class RegistrationForm extends JDialog{
     private JTextField txtEmail;
     private JTextField txtLName;
 
-    registrationController registrationC;
+    RegistrationController registrationC;
 
     private static RegistrationForm RegistrationFormUi;
     public RegistrationForm(){
@@ -32,7 +29,6 @@ public class RegistrationForm extends JDialog{
             }
         });
 
-        setVisible(true);
         btnRegister.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -40,10 +36,12 @@ public class RegistrationForm extends JDialog{
                 String fname= txtFName.getText();
                 String lname= txtLName.getText();
                 String email= txtEmail.getText();
-                String phone= txtPhoneNumber.getText();
                 String password= txtPassword.getText();
 
-                if (registrationC.addRegistrationInfoToDB()){
+                if (fname != null && lname!=null && email!=null && password!=null){
+                    RegistrationController.addRegistrationInfoToDB(
+                            new User(fname, lname,email,password, "Customer")
+                    );
                     JOptionPane.showMessageDialog(registerPanel,"successfully registered to the database",
                             "success",1);
                 }else{

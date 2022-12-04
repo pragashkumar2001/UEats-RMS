@@ -3,7 +3,7 @@ package Models;
  * @author Srikanthan P.K
  * @SA_No SA22401694
  */
-public class User {
+public class User extends BaseModel{
     private String firstName;
     private String lastName;
     private String email;

@@ -50,12 +50,21 @@ public class OrderService {
 
     public int addOrder(Order order) {
         try {
-            String query = "INSERT INTO `orders` (`orderDate`, `customerEmail`, `eventType`, `empEmail`) VALUES ('" + order.getOrderDate() + "', '" + order.getCustomerEmail() + "', '" + order.getEventType() + "', '" + order.getEmpEmail() + "');";
+            String query = "INSERT INTO `orders` (`orderDate`, `customerEmail`, `eventType`) VALUES ('" + order.getOrderDate() + "', '" + order.getCustomerEmail() + "', '" + order.getEventType() + "');";
             int id = singleConn.InsertQueryReturnInt(query);
             return id;
         } catch (Exception ex) {
             System.out.println("Cannot insert a order");
             return -1;
+        }
+    }
+
+    public void updateStatus(int orderId) {
+        try {
+            String query = "UPDATE `orders` SET `status` = 'Ready' WHERE `orders`.`id` ='" + orderId+"';" ;
+            singleConn.ExecuteQuery(query);
+        } catch (Exception ex) {
+            System.out.println("Cannot update order Status");
         }
     }
 

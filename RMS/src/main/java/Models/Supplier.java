@@ -1,4 +1,4 @@
 package Models;
 
-public class Supplier {
+public class Supplier extends BaseModel {
 }

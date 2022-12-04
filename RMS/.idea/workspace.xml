@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f46d856-61ff-492f-97bf-e210fe0ad91f" name="Changes" comment="updated code v2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/SupplierController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/SupplierService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Views/ManageSupplier.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Views/ManageSupplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/CustomerCreateOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/CustomerCreateOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/ManageOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/ManageOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Supplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Views/EmployeeDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/EmployeeDashboard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,12 +23,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -47,22 +57,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ToolWindowBuild.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;212&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Pragash/SLIIT/SEM 2/OOP/UEATS/UEats-RMS/RMS/src/main/java/Views&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ToolWindowBuild.ShowToolbar": "false",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "212",
+    "last_opened_file_path": "D:/Year 01 SEM 02/OOP/UEats-RMS/RMS",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Pragash\SLIIT\SEM 2\OOP\UEATS\UEats-RMS\RMS\src\main\java\Views" />

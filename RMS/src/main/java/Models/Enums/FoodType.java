@@ -9,19 +9,19 @@ public enum FoodType {
     PIZZA {
         @Override
         public float getCost() {
-            return 500;
+            return 600;
         }
     },
     BURGER {
         @Override
         public float getCost() {
-            return 60;
+            return 400;
         }
     },
     SUBMARINE {
         @Override
         public float getCost() {
-            return 75;
+            return 500;
         }
     };
 

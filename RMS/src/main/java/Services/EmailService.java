@@ -10,7 +10,6 @@ import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import javax.swing.*;
 
 /**
  * @author Srikanthan P.K
@@ -41,7 +40,6 @@ public class EmailService {
                 return new PasswordAuthentication(from, "toxholdygvxdtvjb");
 
             }
-
         });
 
         // Used to debug SMTP issues
@@ -61,13 +59,13 @@ public class EmailService {
                             + "<h3>Your order is ready to pick up. Please collect your order from the counter.</h3>"
                             + "<h3>Order Summary :</h3>"
                             + String.format("<ul><li>Order ID : %d </li>", order.getId())
-                            + String.format("<li>Order Date : %t </li>", order.getOrderDate())
-                            + String.format("<li>Total Amount : %f </li></ul>", order.getBillAmount())
+                            + String.format("<li>Order Date : %s </li>", order.getOrderDate())
+                            + String.format("<li>Total Amount : %.2f </li></ul>", order.getBillAmount())
                             + "<h3>We hope you enjoy our food and service and that you will visit us again soon.</h3>",
                     "text/html");
 
             Transport.send(message);
-            System.out.println("Message sent successfully!!!");
+            System.out.println("Email sent successfully!!!");
         } catch (MessagingException mex) {
             mex.printStackTrace();
         }

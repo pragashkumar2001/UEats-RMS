@@ -2,6 +2,9 @@ package Controllers;
 
 import Models.Enums.Role;
 import Models.User;
+import Services.FoodItemService;
+import Services.LoginService;
+import Services.OrderService;
 
 import java.util.ArrayList;
 
@@ -11,26 +14,18 @@ import java.util.ArrayList;
  */
 public class LoginController {
     public static User currentUser;
-    ArrayList<User> userDB;
+    private LoginService loginService;
 
     public LoginController() {
-        userDB = new ArrayList<>();
-        CreateDB();
+        loginService = new LoginService();
     }
 
-    private void CreateDB() {
-        userDB.add(new User("Pragashkumar", "Srikanthan", "pragash@gmail.com", "123","Employee"));
-        userDB.add(new User("Kumara", "Kanianthra", "kumara@gmail.com", "123", "Customer"));
-    }
-
-    public User validateUser(User currentU) {
+    public static void logout() {
         currentUser = null;
-        for (User user : userDB) {
-            if (user.getEmail().equals(currentU.getEmail()) && user.getPassword().equals(currentU.getPassword())) {
-                currentUser =  user;
-            }
-        }
+    }
+
+    public User validateUser(String email, String password) {
+        currentUser = loginService.login(email, password);
         return currentUser;
     }
-
 }

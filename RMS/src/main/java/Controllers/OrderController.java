@@ -4,6 +4,7 @@ import Models.Enums.*;
 import Models.FoodItem;
 import Models.Order;
 import Models.OrderDetail;
+import Services.EmailService;
 import Services.FoodItemService;
 import Services.OrderService;
 
@@ -25,6 +26,11 @@ public class OrderController {
 
     public ArrayList<Order> getOrders() {
         return orderService.getOrders();
+    }
+
+    public void updateStatus(Order order){
+        orderService.updateStatus(order.getId());
+        EmailService.sendMail(order);
     }
 
     public double getCartTotal() {
@@ -50,12 +56,12 @@ public class OrderController {
         return foodItem;
     }
 
-    public void proceedOrder(EventType eventType, String userEmail) {
+    public void proceedOrder(EventType eventType, String customerEmail) {
         LocalDate dateObj = LocalDate.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         String date = dateObj.format(formatter);
 
-        int orderId = orderService.addOrder(new Order(date, eventType, userEmail));
+        int orderId = orderService.addOrder(new Order(date, eventType, customerEmail));
 
         if (orderId > 0) {
             for (FoodItem foodItem : foodItemService.getFoodItemList()) {

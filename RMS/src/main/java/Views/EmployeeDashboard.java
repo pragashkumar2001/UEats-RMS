@@ -1,5 +1,7 @@
 package Views;
 
+import Controllers.LoginController;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -14,6 +16,7 @@ public class EmployeeDashboard extends JFrame {
     public JPanel backPanel;
     private JButton btnManageSupplier;
     private JButton btnGenerateReport;
+    private JButton btnLogout;
 
     public EmployeeDashboard() {
         btnManageOrder.addActionListener(new ActionListener() {
@@ -21,8 +24,8 @@ public class EmployeeDashboard extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 ManageOrder manageOrderUi = new ManageOrder();
                 manageOrderUi.setContentPane(manageOrderUi.backPanel);
-                manageOrderUi.setTitle("UEATS: Manage Order");
-                manageOrderUi.setSize(1000, 600);
+                manageOrderUi.setTitle("UEATS: Manage Order Form");
+                manageOrderUi.setSize(1200, 600);
                 manageOrderUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 manageOrderUi.setLocationRelativeTo(null);
                 manageOrderUi.setVisible(true);
@@ -51,6 +54,20 @@ public class EmployeeDashboard extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+            }
+        });
+        btnLogout.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                LoginController.logout();
+                dispose();
+                LoginView loginViewUi = new LoginView();
+                loginViewUi.setContentPane(loginViewUi.backPanel);
+                loginViewUi.setTitle("User Login Form");
+                loginViewUi.setSize(400, 300);
+                loginViewUi.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                loginViewUi.setLocationRelativeTo(null);
+                loginViewUi.setVisible(true);
             }
         });
     }

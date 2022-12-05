@@ -16,19 +16,19 @@ public enum Topping {
     PEPPERONI {
         @Override
         public float getCost() {
-            return 30;
+            return 250;
         }
     },
     CHICKEN {
         @Override
         public float getCost() {
-            return 35;
+            return 350;
         }
     },
     MUSHROOM {
         @Override
         public float getCost() {
-            return 20;
+            return 200;
         }
     };
 

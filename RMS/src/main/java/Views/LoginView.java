@@ -65,6 +65,7 @@ public class LoginView extends JFrame {
                 }
             }
         });
+
         lblRegister.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {

@@ -43,7 +43,22 @@ public class ManageSupplier extends JFrame {
         supplierController = new SupplierController();
 
         loadTable();
+        Btnadd.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                ManageSupplier ManageSupplierUi = new ManageSupplier();
+                ManageSupplierUi.setContentPane(ManageSupplierUi.backPanel);
+                ManageSupplierUi.setTitle("UEATS: Employee Create Order Form");
+                ManageSupplierUi.setSize(1200, 600);
+                ManageSupplierUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                ManageSupplierUi.setLocationRelativeTo(null);
+                ManageSupplierUi.setVisible(true);
+            }
+        });
     }
+
+
     public void loadTable() {
         model.addColumn("Supplier ID");
         model.addColumn("Supplier Name");

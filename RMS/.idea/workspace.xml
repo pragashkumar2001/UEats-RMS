@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9f46d856-61ff-492f-97bf-e210fe0ad91f" name="Changes" comment="parindi last update code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Materials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Materials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/SupplierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/SupplierController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Models/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Supplier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/SupplierMaterials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/SupplierMaterials.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Services/SupplierService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/SupplierService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/ManageSupplier.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/ManageSupplier.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Views/CustomerCreateOrder.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/CustomerCreateOrder.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Views/ManageSupplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/ManageSupplier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670229905359</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="parindi last update code">
+      <created>1670251279747</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670251279765</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

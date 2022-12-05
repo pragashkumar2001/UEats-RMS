@@ -4,6 +4,8 @@ import javax.swing.*;
 
 import Controllers.OrderController;
 import Controllers.SupplierController;
+import Models.Order;
+import Models.Supplier;
 
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
@@ -38,6 +40,22 @@ public class ManageSupplier extends JFrame {
 
 
 
+    public void loadTable() {
+        model.addColumn("Supplier ID");
+        model.addColumn("Supplier Name");
+        model.addColumn("Supplier Email");
+        model.addColumn("Material ID");
+        model.addColumn("Material Name");
+        model.addColumn("Material Cost");
+        model.addColumn("Quantity");
+        tblSupplier.setModel(model);
+        tblSupplier.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);
+        tblSupplier.setFillsViewportHeight(true);
 
+        for (Supplier supplier : supplierController.getSuppliers()) {
+            SupplierIdList.add(String.valueOf(supplier.getId()));
+            model.addRow(new Object[]{supplier.getId(), supplier.getSupplierName(), supplier.getSupplierEmail(), supplier.getMaterialID(), supplier.getMaterialName(), "Rs." + supplier.getCost(), supplier.getQuantity()});
+        }
+    }
 }
 

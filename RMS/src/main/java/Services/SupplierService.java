@@ -1,9 +1,8 @@
 package Services;
 
 import DB.DatabaseConnection;
-import Models.Enums.EventType;
-import Models.Order;
 import Models.Supplier;
+
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
@@ -28,19 +27,19 @@ public class SupplierService {
                     supplier.setId(rs.getInt("Supplier ID"));
                     supplier.setSupplierName(rs.getString("Supplier Name"));
                     supplier.setSupplierEmail(rs.getString("Supplier Email"));
-                    supplier.setMaterialID(rs.getInt("setMaterialID")));
-                    supplier.setStatus(rs.getString("status"));
-                    supplier.setBillAmount(rs.getDouble("billAmount"));
-                    supplier.setEmpEmail(rs.getString("empEmail"));
-                    supplier.add(order);
+                    supplier.setMaterialID(rs.getInt("setMaterialID"));
+                    supplier.setMaterialName(rs.getString("MaterialName"));
+                    supplier.setCost(rs.getDouble("Cost"));
+                    supplier.setQuantity(rs.getInt("Quantity"));
+                    suppliers.add(supplier);
                 }
             }
 
         } catch (Exception ex) {
-            System.out.println("Cannot insert a order");
+            System.out.println("Cannot insert a Supplier");
         }
 
-        return orders;
+        return suppliers;
     }
 
 }

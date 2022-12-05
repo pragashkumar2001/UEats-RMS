@@ -66,7 +66,7 @@ public Supplier(){
         return cost;
     }
 
-    public void setCost(int cost) {
+    public void setCost(Double cost) {
         this.cost = cost;
     }
     public int getQuantity() {

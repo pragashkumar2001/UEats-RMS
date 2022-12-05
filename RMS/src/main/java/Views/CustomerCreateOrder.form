@@ -72,7 +72,9 @@
             <preferred-size width="200" height="25"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <model/>
+        </properties>
       </component>
       <component id="a0fe8" class="javax.swing.JLabel" binding="lblDrink">
         <constraints>

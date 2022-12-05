@@ -18,7 +18,7 @@ public enum Months {
     NOVEMBER,
     DECEMBER;
 
-    public static String[] items() {
-        return Stream.of(FoodType.values()).map(FoodType::name).toArray(String[]::new);
+    public static String[] months() {
+        return Stream.of(Months.values()).map(Months::name).toArray(String[]::new);
     }
 }

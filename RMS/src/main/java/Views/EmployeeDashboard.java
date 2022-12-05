@@ -46,7 +46,13 @@ public class EmployeeDashboard extends JFrame {
         btnGenerateReport.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                GenerateReport generateReportUi = new GenerateReport();
+                generateReportUi.setContentPane(generateReportUi.backPanel);
+                generateReportUi.setTitle("UEATS: Generate Report Form");
+                generateReportUi.setSize(1200, 600);
+                generateReportUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                generateReportUi.setLocationRelativeTo(null);
+                generateReportUi.setVisible(true);
             }
         });
         btnLogout.addActionListener(new ActionListener() {

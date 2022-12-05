@@ -1,25 +1,48 @@
 package Models;
 
+import Models.Enums.Months;
+
 public class MonthlyReport {
 
+    private Months months;
+    private double FoodCosts;
+    private double BeverageCosts;
+    private double LabourSalaries;
+    private double Rent;
+    private double Utilities;
+    private double Advertisements;
+    private double PackagingExpense;
+    private double DeliveryCosts;
+    private double OtherExpenses;
 
-    public MonthlyReport() {
+    public MonthlyReport(Months months) {
+        this.months = months;
+    }
+
+    public Months getMonths() {
+        return months;
+    }
+
+    public void setMonths(Months months) {
+        this.months = months;
+    }
+
+    public MonthlyReport(double foodCosts, double beverageCosts, double labourSalaries, double rent, double utilities, double advertisements, double packagingExpense, double deliveryCosts, double otherExpenses) {
 
     }
 
-    public class Expences{
-         int FoodCosts;
-         int BeverageCosts;
-         int LabourSalaries;
-         int Rent;
-         int Utilities;
-         int Advertisements;
-         int PackagingExpense;
-         int DeliveryCosts;
+    public class Expenses{
+        double FoodCosts;
+        double BeverageCosts;
+        double LabourSalaries;
+        double Rent;
+        double Utilities;
+        double Advertisements;
+        double PackagingExpense;
+        double DeliveryCosts;
+        double OtherExpenses;
 
-         int OtherExpenses;
-
-        public Expences(int foodCosts, int beverageCosts, int labourSalaries, int rent, int utilities, int advertisements, int packagingExpense, int deliveryCosts, int otherExpenses) {
+        public Expenses(double foodCosts, double beverageCosts, double labourSalaries, double rent, double utilities, double advertisements, double packagingExpense, double deliveryCosts, double otherExpenses) {
             FoodCosts = foodCosts;
             BeverageCosts = beverageCosts;
             LabourSalaries = labourSalaries;
@@ -38,19 +61,11 @@ public class MonthlyReport {
 
 
 
-    private double getTotalExpences() {
-        double FoodCosts = 0;
-        double BeverageCosts = 0;
-        double LabourSalaries = 0;
-        double Rent = 0;
-        double Utilities = 0;
-        double Advertisements = 0;
-        double PackagingExpense = 0;
-        double DeliveryCosts = 0;
-        double OtherExpenses = 0;
+    public double getTotalExpenses() {
         return FoodCosts + BeverageCosts + LabourSalaries + Rent + Utilities + Advertisements + PackagingExpense + DeliveryCosts + OtherExpenses;
     }
     public double profit(){
-        return ()-getTotalExpences();
+        return getTotalExpenses();
     }
+
 }

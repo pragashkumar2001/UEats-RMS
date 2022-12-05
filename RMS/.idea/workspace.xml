@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="e514aaf5-3760-4aa5-8e07-059fc05f824a" name="Changes" comment="poorvikah v2">
     <list default="true" id="9f46d856-61ff-492f-97bf-e210fe0ad91f" name="Changes" comment="updated code v3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DB/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DB/DatabaseConnection.java" afterDir="false" />
@@ -16,8 +17,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -28,17 +27,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
-  <component name="ProjectId" id="2HUhoxKDAzobqnORsTWR1UBKq1B" />
+  <component name="ProjectId" id="2ITstAExxsIK31Qj6iTAFxk12Rx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -48,9 +37,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "false",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ToolWindowBuild.ShowToolbar": "false",
     "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
@@ -62,27 +55,6 @@
     "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Pragash\SLIIT\SEM 2\OOP\UEATS\UEats-RMS\RMS\src\main\java\Views" />
-      <recent name="D:\Pragash\SLIIT\SEM 2\OOP\UEATS\UEats-RMS\RMS\src\main\java\Views\a" />
-      <recent name="D:\Pragash\SLIIT\SEM 2\OOP\UEATS\UEats-RMS\RMS\src\main\java\Services" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Pragash\SLIIT\SEM 2\OOP\UEATS\UEats-RMS\RMS\src\main\java\Views" />
-      <recent name="D:\Pragash\SLIIT\SEM 2\OOP\UEATS\UEats-RMS\RMS\src\main\java\Views\Customer" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Models" />
-      <recent name="Models.Enums" />
-      <recent name="Controllers" />
-      <recent name="Services" />
-      <recent name="DB" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="LoginView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Views.LoginView" />
@@ -106,19 +78,27 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9f46d856-61ff-492f-97bf-e210fe0ad91f" name="Changes" comment="" />
-      <created>1668345750167</created>
+      <changelist id="e514aaf5-3760-4aa5-8e07-059fc05f824a" name="Changes" comment="" />
+      <created>1670217125588</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1668345750167</updated>
+      <updated>1670217125588</updated>
     </task>
-    <task id="LOCAL-00001" summary="updated code v2">
-      <created>1670048397134</created>
+    <task id="LOCAL-00001" summary="emp v2">
+      <created>1670251279888</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1670048397134</updated>
+      <updated>1670251279888</updated>
     </task>
+    <task id="LOCAL-00002" summary="poorvikah v2">
+      <created>1670251970179</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670251970179</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <task id="LOCAL-00002" summary="updated code v3">
       <created>1670168943167</created>
       <option name="number" value="00002" />
@@ -141,6 +121,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="emp v2" />
+    <MESSAGE value="poorvikah v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="poorvikah v2" />
     <MESSAGE value="order form before table" />
     <MESSAGE value="updated code v2" />
     <MESSAGE value="updated code v3" />

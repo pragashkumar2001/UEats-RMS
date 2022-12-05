@@ -3,7 +3,8 @@ package Models;
  * @author Srikanthan P.K
  * @SA_No SA22401694
  */
-public class BaseModel {
+public class
+BaseModel {
     private int id;
 
     public int getId() {

@@ -37,6 +37,13 @@ public class EmployeeDashboard extends JFrame {
         btnManageEmployee.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                ManageEmployee manageEmployeeUi = new ManageEmployee();
+                manageEmployeeUi.setContentPane(manageEmployeeUi.backPanel);
+                manageEmployeeUi.setTitle("UEATS: Manage Employee");
+                manageEmployeeUi.setSize(1000, 600);
+                manageEmployeeUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                manageEmployeeUi.setLocationRelativeTo(null);
+                manageEmployeeUi.setVisible(true);
 
             }
         });

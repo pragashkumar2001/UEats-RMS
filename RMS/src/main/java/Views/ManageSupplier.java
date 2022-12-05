@@ -38,8 +38,12 @@ public class ManageSupplier extends JFrame {
 
     private ArrayList<String> SupplierIdList;
 
+    public ManageSupplier() {
+        model = new DefaultTableModel();
+        supplierController = new SupplierController();
 
-
+        loadTable();
+    }
     public void loadTable() {
         model.addColumn("Supplier ID");
         model.addColumn("Supplier Name");

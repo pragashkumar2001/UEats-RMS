@@ -34,6 +34,13 @@ public class EmployeeDashboard extends JFrame {
         btnManageSupplier.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                ManageSupplier manageSupplierUi = new ManageSupplier();
+                manageSupplierUi.setContentPane(manageSupplierUi.backPanel);
+                manageSupplierUi.setTitle("UEATS: Supplier Form");
+                manageSupplierUi.setSize(1200, 600);
+                manageSupplierUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                manageSupplierUi.setLocationRelativeTo(null);
+                manageSupplierUi.setVisible(true);
 
             }
         });

@@ -16,7 +16,8 @@ import java.awt.event.ItemListener;
  * @author Srikanthan P.K
  * @SA_No SA22401694
  */
-public class CustomerCreateOrder extends JFrame {
+public class
+CustomerCreateOrder extends JFrame {
     private JTable tblCart;
     private JComboBox cbFoodType;
     private JComboBox cbSize;
@@ -60,7 +61,8 @@ public class CustomerCreateOrder extends JFrame {
         btnClearItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                try {
+                try
+                {
                     int index = tblCart.getSelectedRow();
                     model.removeRow(index);
                     orderController.removeCartItem(index);

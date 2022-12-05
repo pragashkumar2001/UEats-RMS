@@ -2,7 +2,6 @@ package Views;
 
 import Controllers.OrderController;
 import Models.Order;
-import Services.EmailService;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -72,7 +71,7 @@ public class ManageOrder extends JFrame {
         viewReceiptButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                RegistrationForm RegUi = new RegistrationForm();
+                RegistrationView RegUi = new RegistrationView();
                 RegUi.setContentPane(RegUi.registerPanel);
                 RegUi.setTitle("UEATS: User Registration Form");
                 RegUi.setSize(600, 600);

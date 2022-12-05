@@ -69,10 +69,10 @@ public class LoginView extends JFrame {
         lblRegister.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                RegistrationForm RegUi = new RegistrationForm();
+                RegistrationView RegUi = new RegistrationView();
                 RegUi.setContentPane(RegUi.registerPanel);
                 RegUi.setTitle("UEATS: User Registration Form");
-                RegUi.setSize(600, 600);
+                RegUi.setSize(400, 400);
                 RegUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 RegUi.setLocationRelativeTo(null);
                 RegUi.setVisible(true);

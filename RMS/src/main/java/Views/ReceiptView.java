@@ -17,7 +17,4 @@ public class ReceiptView {
         });
     }
 
-    public static void main(String[] args) {
-
-    }
 }

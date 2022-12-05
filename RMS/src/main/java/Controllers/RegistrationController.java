@@ -1,24 +1,17 @@
 package Controllers;
 
-import Models.Order;
 import Models.User;
 import Services.RegistrationService;
 
-import java.util.ArrayList;
-
-
 public class RegistrationController {
-    private RegistrationService RagService;
+    private RegistrationService registrationService;
 
     public RegistrationController() {
-        RagService = new RegistrationService();
+        registrationService = new RegistrationService();
     }
 
-//    public boolean addRegistrationInfoToDB(User customer) {
-//        return RagService.addRegistrationInfo(customer);
-//    }
-
-    public ArrayList<User> getUsers() {
-        return RagService.getUsers();
+    public boolean registerCustomer(User customer) {
+        return registrationService.addRegistrationInfo(customer);
     }
+
 }

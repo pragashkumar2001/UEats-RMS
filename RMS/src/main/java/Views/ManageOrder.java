@@ -2,10 +2,10 @@ package Views;
 
 import Controllers.OrderController;
 import Models.Order;
-import Services.EmailService;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -59,15 +59,17 @@ public class ManageOrder extends JFrame {
                         model.setColumnCount(0);
                         model.setRowCount(0);
                         loadTable();
-                        }
-                    JOptionPane.showMessageDialog(backPanel, "Customer has been notified via Email!!!", "Email Service Manager", 1);
+                    }
+                    JOptionPane.showMessageDialog(backPanel, "Customer has been notified via Email!!!",
+                            "Email Service Manager", 1);
                 } catch (IndexOutOfBoundsException ex) {
-                    JOptionPane.showMessageDialog(backPanel, "Please select an item to update order status!!!", "Error", 0);
+                    JOptionPane.showMessageDialog(backPanel, "Please select an item to update order status!!!", "Error",
+                            0);
                 }
-
 
             }
         });
+
         assignEmployeeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -78,6 +80,20 @@ public class ManageOrder extends JFrame {
                 assignEmployeeUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 assignEmployeeUi.setLocationRelativeTo(null);
                 assignEmployeeUi.setVisible(true);
+            }
+        });
+
+        viewReceiptButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                RegistrationView RegUi = new RegistrationView();
+                RegUi.setContentPane(RegUi.registerPanel);
+                RegUi.setTitle("UEATS: User Registration Form");
+                RegUi.setSize(600, 600);
+                RegUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                RegUi.setLocationRelativeTo(null);
+                RegUi.setVisible(true);
+                viewReceiptButton.setForeground(Color.RED);
             }
         });
     }
@@ -98,7 +114,8 @@ public class ManageOrder extends JFrame {
 
         for (Order order : orderController.getOrders()) {
             orderIdList.add(String.valueOf(order.getId()));
-            model.addRow(new Object[]{order.getId(), order.getCustomerEmail(), order.getOrderDate(), order.getEventType(), "Rs." + order.getBillAmount(), order.getStatus(), order.getEmpEmail()});
+            model.addRow(new Object[] { order.getId(), order.getCustomerEmail(), order.getOrderDate(),
+                    order.getEventType(), "Rs." + order.getBillAmount(), order.getStatus(), order.getEmpEmail() });
         }
 
     }

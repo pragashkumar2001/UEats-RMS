@@ -34,19 +34,39 @@ public class EmployeeDashboard extends JFrame {
         btnManageSupplier.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                ManageSupplier manageSupplierUi = new ManageSupplier();
+                manageSupplierUi.setContentPane(manageSupplierUi.backPanel);
+                manageSupplierUi.setTitle("UEATS: Supplier Form");
+                manageSupplierUi.setSize(1200, 600);
+                manageSupplierUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                manageSupplierUi.setLocationRelativeTo(null);
+                manageSupplierUi.setVisible(true);
 
             }
         });
         btnManageEmployee.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                ManageEmployee manageEmployeeUi = new ManageEmployee();
+                manageEmployeeUi.setContentPane(manageEmployeeUi.backPanel);
+                manageEmployeeUi.setTitle("UEATS: Manage Employee");
+                manageEmployeeUi.setSize(1000, 600);
+                manageEmployeeUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                manageEmployeeUi.setLocationRelativeTo(null);
+                manageEmployeeUi.setVisible(true);
 
             }
         });
         btnGenerateReport.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                GenerateReport generateReportUi = new GenerateReport();
+                generateReportUi.setContentPane(generateReportUi.backPanel);
+                generateReportUi.setTitle("UEATS: Generate Report Form");
+                generateReportUi.setSize(1200, 600);
+                generateReportUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                generateReportUi.setLocationRelativeTo(null);
+                generateReportUi.setVisible(true);
             }
         });
         btnLogout.addActionListener(new ActionListener() {

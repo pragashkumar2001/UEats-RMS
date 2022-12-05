@@ -8,8 +8,7 @@ import java.util.stream.Stream;
 public enum Size {
     SMALL {
         @Override
-        public float getCost() {
-            return 100;
+        public float getCost() { return 100;
         }
     },
     MEDIUM {

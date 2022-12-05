@@ -12,7 +12,7 @@ public class RegistrationForm extends JDialog{
     private JTextField txtPassword;
     private JButton btnCancel;
     private JButton btnRegister;
-    private JPanel registerPanel;
+    public JPanel registerPanel;
     private JTextField txtEmail;
     private JTextField txtLName;
 
@@ -39,9 +39,10 @@ public class RegistrationForm extends JDialog{
                 String password= txtPassword.getText();
 
                 if (fname != null && lname!=null && email!=null && password!=null){
-                    RegistrationController.addRegistrationInfoToDB(
-                            new User(fname, lname,email,password, "Customer")
-                    );
+                    RegistrationController Controller = new RegistrationController();
+//                (
+//                            new User(fname, lname,email,password, "Customer")
+//                    );
                     JOptionPane.showMessageDialog(registerPanel,"successfully registered to the database",
                             "success",1);
                 }else{
@@ -60,7 +61,7 @@ public class RegistrationForm extends JDialog{
         RegistrationForm ui=new RegistrationForm();
         ui.setContentPane(ui.registerPanel);
         ui.setTitle("register form ");
-        ui.setSize(600,600);
+        ui.setSize(450,490);
         ui.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         ui.setVisible(true);
     }

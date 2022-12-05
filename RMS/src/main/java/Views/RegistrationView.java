@@ -12,7 +12,7 @@ public class RegistrationView extends JDialog {
     private JTextField txtPassword;
     private JButton btnCancel;
     private JButton btnRegister;
-    public JPanel registerPanel;
+    public JPanel backPanel;
     private JTextField txtEmail;
     private JTextField txtLName;
     private JLabel lblUserName;
@@ -41,9 +41,9 @@ public class RegistrationView extends JDialog {
 
                 if (fName != null && lName != null && email != null && password != null) {
                     registrationController.registerCustomer(new User(fName, lName, email, password, "Customer"));
-                    JOptionPane.showMessageDialog(registerPanel, "successfully registered to the database", "success", 1);
+                    JOptionPane.showMessageDialog(backPanel, "successfully registered to the database", "success", 1);
                 } else {
-                    JOptionPane.showMessageDialog(registerPanel, "cannot insert registered to the database", "error", 0);
+                    JOptionPane.showMessageDialog(backPanel, "cannot insert registered to the database", "error", 0);
                 }
             }
         });

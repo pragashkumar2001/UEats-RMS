@@ -4,8 +4,8 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ReceiptView {
-    private JPanel ReceiptPanel;
+public class ReceiptView extends JFrame{
+    public JPanel backPanel;
     private JButton button1;
 
     public ReceiptView() {

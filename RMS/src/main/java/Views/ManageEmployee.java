@@ -37,17 +37,11 @@ public class ManageEmployee extends JFrame {
                 dispose();
                 AddEmployee addEmployeeUi = new AddEmployee();
                 addEmployeeUi.setContentPane(addEmployeeUi.backPanel);
-                addEmployeeUi.setTitle("UEATS: Manage Employee Form");
-                addEmployeeUi.setSize(1000, 600);
+                addEmployeeUi.setTitle("UEATS: Add Employee Form");
+                addEmployeeUi.setSize(400, 400);
                 addEmployeeUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 addEmployeeUi.setLocationRelativeTo(null);
                 addEmployeeUi.setVisible(true);
-
-            }
-        });
-        deleteEmployeeButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
             }
         });
 
@@ -61,6 +55,19 @@ public class ManageEmployee extends JFrame {
                 } catch (ArrayIndexOutOfBoundsException ex) {
                     JOptionPane.showMessageDialog(backPanel, "Please select a record to clear!!!", "Error", 0);
                 }
+            }
+        });
+        updateEmployeeButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                AddEmployee addEmployeeUi = new AddEmployee();
+                addEmployeeUi.setContentPane(addEmployeeUi.backPanel);
+                addEmployeeUi.setTitle("UEATS: Update Employee Form");
+                addEmployeeUi.setSize(400, 400);
+                addEmployeeUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                addEmployeeUi.setLocationRelativeTo(null);
+                addEmployeeUi.setVisible(true);
             }
         });
     }

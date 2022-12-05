@@ -86,13 +86,13 @@ public class ManageOrder extends JFrame {
         viewReceiptButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                RegistrationView RegUi = new RegistrationView();
-                RegUi.setContentPane(RegUi.registerPanel);
-                RegUi.setTitle("UEATS: User Registration Form");
-                RegUi.setSize(600, 600);
-                RegUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-                RegUi.setLocationRelativeTo(null);
-                RegUi.setVisible(true);
+                ReceiptView receiptViewUi = new ReceiptView();
+                receiptViewUi.setContentPane(receiptViewUi.backPanel);
+                receiptViewUi.setTitle("UEATS: User Registration Form");
+                receiptViewUi.setSize(600, 600);
+                receiptViewUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                receiptViewUi.setLocationRelativeTo(null);
+                receiptViewUi.setVisible(true);
                 viewReceiptButton.setForeground(Color.RED);
             }
         });

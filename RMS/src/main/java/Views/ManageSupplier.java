@@ -56,6 +56,12 @@ public class ManageSupplier extends JFrame {
                 ManageSupplierUi.setVisible(true);
             }
         });
+        Btnback.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+            }
+        });
     }
 
 

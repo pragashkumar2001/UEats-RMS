@@ -4,20 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13b80d06-46c1-496f-88dd-f78370713b0b" name="Changes" comment="">
+    <list default="true" id="9f46d856-61ff-492f-97bf-e210fe0ad91f" name="Changes" comment="parindi last update code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Enums/Months.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Enums/Months.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/MonthlyReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/MonthlyReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Services/IncomeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/IncomeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/CustomerCreateOrder.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/CustomerCreateOrder.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/EmployeeDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/EmployeeDashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/Report.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/GenerateReport.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/GenerateReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Views/ManageSupplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/ManageSupplier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -25,7 +26,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2IV6nYyoIs5bSjhE28U5uI0BNAj" />
+  <component name="ProjectId" id="2IUBup4DXpWFnrP4XFYnpuXfIPx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -33,16 +34,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;247&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/OneDrive/Desktop/MYOOP/UEats-RMS/RMS&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "293",
+    "last_opened_file_path": "C:/Users/HP/Downloads/UEATS_OOP_FINAL/PaperClips21062022/PaperClips21062022"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="LoginView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Views.LoginView" />
@@ -65,13 +64,49 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="parindi last update code">
+      <created>1670220090193</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670220090193</updated>
+    </task>
     <task active="true" id="Default" summary="Default task">
-      <changelist id="13b80d06-46c1-496f-88dd-f78370713b0b" name="Changes" comment="" />
-      <created>1670254571208</created>
+      <changelist id="9f46d856-61ff-492f-97bf-e210fe0ad91f" name="Changes" comment="parindi last update code" />
+      <created>1670226529496</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1670254571208</updated>
+      <updated>1670226529496</updated>
     </task>
+    <task id="LOCAL-00002" summary="parindi last update code">
+      <created>1670229905359</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670229905359</updated>
+    </task>
+    <task id="LOCAL-00003" summary="parindi last update code">
+      <created>1670251279747</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670251279765</updated>
+    </task>
+    <task id="LOCAL-00004" summary="parindi last update code">
+      <created>1670253785614</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670253785614</updated>
+    </task>
+    <task id="LOCAL-00005" summary="parindi last update code">
+      <created>1670254684296</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670254684296</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,9 +120,8 @@
       </map>
     </option>
   </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/RMS$LoginView.ic" NAME="LoginView Coverage Results" MODIFIED="1670240996636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>Views.*</FILTER>
-    </SUITE>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="parindi last update code" />
+    <option name="LAST_COMMIT_MESSAGE" value="parindi last update code" />
   </component>
 </project>

@@ -15,52 +15,46 @@ import java.awt.event.ActionListener;
  * @SA_No SA22402202
  */
 
-public class ManageEmployee extends JFrame
-{
+public class ManageEmployee extends JFrame {
     private OrderController orderController;
     private DefaultTableModel model;
+
     public JPanel backPanel;
     private JTable tblEmployee;
-    private JButton viewEmployeeButton;
     private JButton addEmployeeButton;
     private JButton updateEmployeeButton;
     private JButton deleteEmployeeButton;
 
-    public ManageEmployee()
-    {
+    public ManageEmployee() {
         model = new DefaultTableModel();
         orderController = new OrderController();
 
         loadTable();
-        
-        addEmployeeButton.addActionListener(new ActionListener() {
-        @Override
-        public void actionPerformed(ActionEvent e)
-        {
-            dispose();
-            AddEmployee addEmployeeUi = new AddEmployee();
-            addEmployeeUi.setContentPane(addEmployeeUi.backPanel);
-            addEmployeeUi.setTitle("UEATS: Manage Employee Form");
-            addEmployeeUi.setSize(1000, 600);
-            addEmployeeUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-            addEmployeeUi.setLocationRelativeTo(null);
-            addEmployeeUi.setVisible(true);
 
-        }
-        });
-        deleteEmployeeButton.addActionListener(new ActionListener()
-        {
+        addEmployeeButton.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e)
-            {
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                AddEmployee addEmployeeUi = new AddEmployee();
+                addEmployeeUi.setContentPane(addEmployeeUi.backPanel);
+                addEmployeeUi.setTitle("UEATS: Manage Employee Form");
+                addEmployeeUi.setSize(1000, 600);
+                addEmployeeUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                addEmployeeUi.setLocationRelativeTo(null);
+                addEmployeeUi.setVisible(true);
+
+            }
+        });
+        deleteEmployeeButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
             }
         });
 
         deleteEmployeeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                try
-                {
+                try {
                     int index = tblEmployee.getSelectedRow();
                     model.removeRow(index);
                     EmployeeController.removeEmployee(index);
@@ -83,8 +77,7 @@ public class ManageEmployee extends JFrame
         tblEmployee.setFillsViewportHeight(true);
 
         for (Order order : orderController.getOrders()) {
-            if (order.getEmpEmail() == null)
-            {
+            if (order.getEmpEmail() == null) {
                 order.setEmpEmail("Unassigned");
             }
             model.addRow(new Object[]{order.getId(), order.getCustomerEmail(), order.getOrderDate(), order.getEventType(), "Rs." + order.getBillAmount(), order.getStatus(), order.getEmpEmail()});

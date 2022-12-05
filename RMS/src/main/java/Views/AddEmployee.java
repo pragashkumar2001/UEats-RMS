@@ -16,17 +16,12 @@ public class AddEmployee extends JFrame {
     private JLabel lblFirstName;
     private JLabel lblEmail;
     private JLabel lblPassword;
-    private JLabel lblDOB;
-    private JLabel lblRole;
-    private JTable tblEmployee;
     private JButton btnAddEmployee;
 
     private JTextField txtFirstName;
     private JTextField txtLastName;
-    private JTextField txtDOB;
     private JTextField txtEmail;
     private JTextField txtPassword;
-    private JTextField txtRole;
     private DefaultTableModel model;
 
     public AddEmployee()

@@ -6,7 +6,6 @@ import java.awt.event.ActionListener;
 
 public class Report extends JFrame{
 
-    private JTextField textField1;
     private JTextField textFoodSales;
     private JTextField textBeverageSales;
     private JTextField textDeliveryFeeIncome;
@@ -21,6 +20,10 @@ public class Report extends JFrame{
     private JButton btnTotalIncome;
     private JButton btntotalExpenses;
     private JTextField textOtherExpenses;
+    private JList list1;
+    private JLabel lblMonthlyIncome;
+    private JLabel lblTotalIncome;
+    private JLabel lblTotalExoenses;
 
     public Report(){
 

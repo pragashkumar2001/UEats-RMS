@@ -1,9 +1,11 @@
 package Models;
 
-public class IncomeExpences{
-    private int FoodSales;
-    private int BeverageSales;
-    private int DeliveryFeeIncome;
+public class MonthlyReport {
+
+
+    public MonthlyReport() {
+
+    }
 
     public class Expences{
          int FoodCosts;
@@ -34,15 +36,6 @@ public class IncomeExpences{
     }
 
 
-    public IncomeExpences(int foodSales, int beverageSales, int deliveryFeeIncome) {
-        FoodSales = foodSales;
-        BeverageSales = beverageSales;
-        DeliveryFeeIncome = deliveryFeeIncome;
-    }
-
-    public double getTotalIncome() {
-        return FoodSales + BeverageSales + DeliveryFeeIncome;
-    }
 
 
     private double getTotalExpences() {
@@ -58,6 +51,6 @@ public class IncomeExpences{
         return FoodCosts + BeverageCosts + LabourSalaries + Rent + Utilities + Advertisements + PackagingExpense + DeliveryCosts + OtherExpenses;
     }
     public double profit(){
-        return getTotalIncome()-getTotalExpences();
+        return ()-getTotalExpences();
     }
 }

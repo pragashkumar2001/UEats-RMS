@@ -18,7 +18,7 @@
           <background color="-4930843"/>
           <foreground color="-16777216"/>
         </properties>
-        <border type="none"/>
+        <border type="none" title="0813"/>
         <children>
           <component id="5afb0" class="javax.swing.JTable" binding="tblOrder">
             <constraints/>

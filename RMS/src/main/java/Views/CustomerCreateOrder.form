@@ -17,7 +17,9 @@
             <preferred-size width="200" height="25"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <model/>
+        </properties>
       </component>
       <component id="50dd7" class="javax.swing.JComboBox" binding="cbSize">
         <constraints>
@@ -25,7 +27,9 @@
             <preferred-size width="200" height="25"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <model/>
+        </properties>
       </component>
       <component id="da4e7" class="javax.swing.JLabel" binding="lblSize">
         <constraints>

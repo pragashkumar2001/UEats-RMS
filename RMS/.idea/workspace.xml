@@ -5,30 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f46d856-61ff-492f-97bf-e210fe0ad91f" name="Changes" comment="updated code v2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Services/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Views/SampleReg.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Views/SampleReg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Models/AssignEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/AssignEmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Views/AssignEmployee.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Views/AssignEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Department.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Email.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Enums/FoodType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Enums/FoodType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Enums/Topping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Enums/Topping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Material.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Services/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Services/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Views/CustomerCreateOrder.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/CustomerCreateOrder.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/CustomerDashboard.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/CustomerDashboard.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/CustomerDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/CustomerDashboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Views/EmployeeDashboard.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/EmployeeDashboard.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/EmployeeDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/EmployeeDashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/LoginView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/LoginView.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/LoginView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Views/ManageOrder.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/ManageOrder.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Views/ManageOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/ManageOrder.java" afterDir="false" />
     </list>
@@ -47,6 +31,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -78,11 +67,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ToolWindowBuild.ShowToolbar": "false",
     "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "212",
-    "last_opened_file_path": "D:/Pragash/SLIIT/SEM 2/OOP/OOP_Group",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "574",
+    "last_opened_file_path": "C:/Users/HP/OneDrive/Documents/FInalOOP/UEats-RMS/RMS",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
@@ -107,7 +96,7 @@
       <recent name="DB" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.All in RMS (3)">
     <configuration name="LoginView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Views.LoginView" />
       <module name="RMS" />
@@ -121,8 +110,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in RMS (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RMS" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in RMS (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RMS" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in RMS (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RMS" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in RMS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RMS" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in RMS (3)" />
+        <item itemvalue="JUnit.All in RMS (2)" />
+        <item itemvalue="JUnit.All in RMS (1)" />
+        <item itemvalue="JUnit.All in RMS" />
         <item itemvalue="Application.LoginView" />
       </list>
     </recent_temporary>

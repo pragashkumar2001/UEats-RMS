@@ -68,6 +68,18 @@ public class ManageOrder extends JFrame {
 
             }
         });
+        assignEmployeeButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                AssignEmployee assignEmployeeUi = new AssignEmployee();
+                assignEmployeeUi.setContentPane(assignEmployeeUi.backPanel);
+                assignEmployeeUi.setTitle("UEATS: Assign Employee Form");
+                assignEmployeeUi.setSize(1200, 600);
+                assignEmployeeUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                assignEmployeeUi.setLocationRelativeTo(null);
+                assignEmployeeUi.setVisible(true);
+            }
+        });
     }
 
     public void loadTable() {

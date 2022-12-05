@@ -6,6 +6,7 @@ import Services.EmailService;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -66,6 +67,19 @@ public class ManageOrder extends JFrame {
                 }
 
 
+            }
+        });
+        viewReceiptButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                RegistrationForm RegUi = new RegistrationForm();
+                RegUi.setContentPane(RegUi.registerPanel);
+                RegUi.setTitle("UEATS: User Registration Form");
+                RegUi.setSize(600, 600);
+                RegUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                RegUi.setLocationRelativeTo(null);
+                RegUi.setVisible(true);
+                viewReceiptButton.setForeground(Color.RED);
             }
         });
     }

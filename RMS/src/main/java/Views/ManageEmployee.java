@@ -34,7 +34,6 @@ public class ManageEmployee extends JFrame {
         addEmployeeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                dispose();
                 AddEmployee addEmployeeUi = new AddEmployee();
                 addEmployeeUi.setContentPane(addEmployeeUi.backPanel);
                 addEmployeeUi.setTitle("UEATS: Add Employee Form");
@@ -60,7 +59,6 @@ public class ManageEmployee extends JFrame {
         updateEmployeeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                dispose();
                 AddEmployee addEmployeeUi = new AddEmployee();
                 addEmployeeUi.setContentPane(addEmployeeUi.backPanel);
                 addEmployeeUi.setTitle("UEATS: Update Employee Form");
@@ -82,13 +80,6 @@ public class ManageEmployee extends JFrame {
         tblEmployee.setModel(model);
         tblEmployee.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);
         tblEmployee.setFillsViewportHeight(true);
-
-        for (Order order : orderController.getOrders()) {
-            if (order.getEmpEmail() == null) {
-                order.setEmpEmail("Unassigned");
-            }
-            model.addRow(new Object[]{order.getId(), order.getCustomerEmail(), order.getOrderDate(), order.getEventType(), "Rs." + order.getBillAmount(), order.getStatus(), order.getEmpEmail()});
-        }
 
     }
 }

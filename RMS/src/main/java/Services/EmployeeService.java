@@ -3,6 +3,7 @@ package Services;
 import DB.DatabaseConnection;
 import Models.User;
 
+
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
@@ -19,6 +20,19 @@ public class EmployeeService
         singleConn = DatabaseConnection.getSingleInstance();
     }
 
+    public boolean addEmployeeInfo(User user)
+    {
+        try{
+            String query="INSERT INTO `user` (`firstName`, `lastName`, `email`, `password`, `role`) VALUES ('" + user.getFirstName() + "', '" + user.getLastName() + "', '" + user.getEmail() + "', '" + user.getPassword() + "', '" + user.getRole() + "');";
+            boolean result = singleConn.ExecuteQuery(query);
+            return result;
+        }catch (Exception ex)
+        {
+            System.out.println("Cannot insert Employee Info");
+            return false;
+
+        }
+    }
     public static void removeEmployee(int index)
     {
 
@@ -28,8 +42,22 @@ public class EmployeeService
         ArrayList<User> employees = new ArrayList<>();
 
         try {
-            String query = "SELECT o.id, o.customerEmail, o.orderDate, o.eventType, o.status, SUM(fi.totalAmount) as billAmount, o.empEmail FROM orders o, order_detail od, food_item fi WHERE o.id = od.orderId AND od.foodItemId = fi.id GROUP By o.id;";
-            ResultSet rs = singleConn.ExecuteGetQuery(query);
+            String query = "SELECT`id`,`firstName`,`lastName`,`email`,`password` FROM `user`";
+            ResultSet res = singleConn.ExecuteGetQuery(query);
+
+            if (res != null)
+            {
+                while (res.next())
+                {
+                    User user = new User();
+                    user.setFirstName(res.getString("FirstName"));
+                    user.setLastName(res.getString("LastName"));
+                    user.setEmail(res.getString("Email"));
+                    user.setPassword(res.getString("Password"));
+//                    user.setRole(res.getString("Role"));
+                    employees.add(user);
+                }
+            }
 
         } catch (Exception ex) {
             System.out.println("Cannot enter Employee");

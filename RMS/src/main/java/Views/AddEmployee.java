@@ -3,6 +3,7 @@ package Views;
 import Controllers.LoginController;
 import Controllers.EmployeeController;
 import Models.FoodItem;
+import Models.User;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -33,10 +34,19 @@ public class AddEmployee extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e)
             {
-//                int quantity = Integer.parseInt(spnQuantity.getValue().toString());
-//                FoodItem foodItem = orderController.addFoodToCart(quantity, selectedFoodType, selectedSize, selectedTopping, selectedDrink);
-//                model.addRow(new Object[]{selectedFoodType, selectedSize, selectedTopping, selectedDrink, quantity, "Rs." + foodItem.getItemCost(), "Rs." + foodItem.getTotalAmount()});
-//                JOptionPane.showMessageDialog(backPanel, "Item Added Successfully!!!", "Success", 1);
+               String fName = txtFirstName.getText();
+                String lName = txtLastName.getText();
+                String email = txtEmail.getText();
+                String password = txtPassword.getText();
+                model.addRow(new Object[]{txtFirstName, txtLastName, txtEmail, txtPassword});
+                JOptionPane.showMessageDialog(backPanel, "Emplpoyee Details Added Successfully!!!", "Success", 1);
+
+                if (fName != null && lName != null && email != null && password != null) {
+                    EmployeeController.addEmployee(new User(fName, lName, email, password, "Employee"));
+                    JOptionPane.showMessageDialog(backPanel, "successfully registered to the database", "success", 1);
+                } else {
+                    JOptionPane.showMessageDialog(backPanel, "cannot insert registered to the database", "error", 0);
+                }
 
 
             }

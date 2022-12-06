@@ -1,13 +1,10 @@
 package Views;
 
-import Controllers.OrderController;
-import Models.Enums.EventType;
-import Models.Enums.Months;
+import Models.Enums.Month;
 import Models.MonthlyReport;
 import Services.IncomeService;
 
 import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
@@ -15,7 +12,7 @@ import java.awt.event.ItemListener;
 
 public class GenerateReport extends JFrame{
 
-    private Months selectedmonthtype;
+    private Month selectedmonthtype;
 
     private JTextField textFoodSales;
     private JTextField textBeverageSales;
@@ -76,8 +73,8 @@ public class GenerateReport extends JFrame{
     }
 
     private void loadmonths() {
-            selectedmonthtype = Months.JANUARY;
-            String months[] = Months.months();
+            selectedmonthtype = Month.JANUARY;
+            String months[] = Month.months();
 
             for (String event : months) {
                 comboBox1.addItem(months);
@@ -86,7 +83,7 @@ public class GenerateReport extends JFrame{
                 @Override
                 public void itemStateChanged(ItemEvent e) {
                     if (e.getStateChange() == ItemEvent.SELECTED) {
-                        selectedmonthtype = Months.valueOf(comboBox1.getSelectedItem().toString());
+                        selectedmonthtype = Month.valueOf(comboBox1.getSelectedItem().toString());
                     }
                 }
             });

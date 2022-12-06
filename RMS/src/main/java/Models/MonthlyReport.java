@@ -1,10 +1,11 @@
 package Models;
 
-import Models.Enums.Months;
+
+import Models.Enums.Month;
 
 public class MonthlyReport {
 
-    private Months months;
+    private Month months;
     private double FoodCosts;
     private double BeverageCosts;
     private double LabourSalaries;
@@ -15,15 +16,15 @@ public class MonthlyReport {
     private double DeliveryCosts;
     private double OtherExpenses;
 
-    public MonthlyReport(Months months) {
+    public MonthlyReport(Month months) {
         this.months = months;
     }
 
-    public Months getMonths() {
+    public Month getMonths() {
         return months;
     }
 
-    public void setMonths(Months months) {
+    public void setMonths(Month months) {
         this.months = months;
     }
 
@@ -31,7 +32,7 @@ public class MonthlyReport {
 
     }
 
-    public class Expenses{
+    public class Expenses {
         double FoodCosts;
         double BeverageCosts;
         double LabourSalaries;
@@ -59,12 +60,11 @@ public class MonthlyReport {
     }
 
 
-
-
     public double getTotalExpenses() {
         return FoodCosts + BeverageCosts + LabourSalaries + Rent + Utilities + Advertisements + PackagingExpense + DeliveryCosts + OtherExpenses;
     }
-    public double profit(){
+
+    public double profit() {
         return getTotalExpenses();
     }
 

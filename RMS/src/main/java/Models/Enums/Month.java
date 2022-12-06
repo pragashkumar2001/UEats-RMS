@@ -3,7 +3,7 @@ package Models.Enums;
 
 import java.util.stream.Stream;
 
-public enum Months {
+public enum Month {
 
     JANUARY,
     FEBRUARY,
@@ -19,6 +19,6 @@ public enum Months {
     DECEMBER;
 
     public static String[] months() {
-        return Stream.of(Months.values()).map(Months::name).toArray(String[]::new);
+        return Stream.of(Month.values()).map(Month::name).toArray(String[]::new);
     }
 }

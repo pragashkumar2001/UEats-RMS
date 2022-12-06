@@ -16,7 +16,7 @@ import java.awt.event.ActionListener;
  */
 
 public class ManageEmployee extends JFrame {
-    private OrderController orderController;
+    private  EmployeeController employeeController;
     private DefaultTableModel model;
 
     public JPanel backPanel;
@@ -26,8 +26,9 @@ public class ManageEmployee extends JFrame {
     private JButton deleteEmployeeButton;
 
     public ManageEmployee() {
+        employeeController = new EmployeeController();
         model = new DefaultTableModel();
-        orderController = new OrderController();
+
 
         loadTable();
 
@@ -41,6 +42,7 @@ public class ManageEmployee extends JFrame {
                 addEmployeeUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 addEmployeeUi.setLocationRelativeTo(null);
                 addEmployeeUi.setVisible(true);
+
             }
         });
 
@@ -83,7 +85,3 @@ public class ManageEmployee extends JFrame {
 
     }
 }
-
-
-
-

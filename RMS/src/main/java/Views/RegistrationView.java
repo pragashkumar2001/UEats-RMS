@@ -48,5 +48,4 @@ public class RegistrationView extends JDialog {
             }
         });
     }
-
 }

@@ -16,7 +16,7 @@ import java.awt.event.ActionListener;
  */
 
 public class ManageEmployee extends JFrame {
-    private OrderController orderController;
+    private  EmployeeController employeeController;
     private DefaultTableModel model;
 
     public JPanel backPanel;
@@ -26,15 +26,15 @@ public class ManageEmployee extends JFrame {
     private JButton deleteEmployeeButton;
 
     public ManageEmployee() {
+        employeeController = new EmployeeController();
         model = new DefaultTableModel();
-        orderController = new OrderController();
+
 
         loadTable();
 
         addEmployeeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                dispose();
                 AddEmployee addEmployeeUi = new AddEmployee();
                 addEmployeeUi.setContentPane(addEmployeeUi.backPanel);
                 addEmployeeUi.setTitle("UEATS: Add Employee Form");
@@ -42,6 +42,7 @@ public class ManageEmployee extends JFrame {
                 addEmployeeUi.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 addEmployeeUi.setLocationRelativeTo(null);
                 addEmployeeUi.setVisible(true);
+
             }
         });
 
@@ -60,7 +61,6 @@ public class ManageEmployee extends JFrame {
         updateEmployeeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                dispose();
                 AddEmployee addEmployeeUi = new AddEmployee();
                 addEmployeeUi.setContentPane(addEmployeeUi.backPanel);
                 addEmployeeUi.setTitle("UEATS: Update Employee Form");
@@ -83,16 +83,5 @@ public class ManageEmployee extends JFrame {
         tblEmployee.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);
         tblEmployee.setFillsViewportHeight(true);
 
-        for (Order order : orderController.getOrders()) {
-            if (order.getEmpEmail() == null) {
-                order.setEmpEmail("Unassigned");
-            }
-            model.addRow(new Object[]{order.getId(), order.getCustomerEmail(), order.getOrderDate(), order.getEventType(), "Rs." + order.getBillAmount(), order.getStatus(), order.getEmpEmail()});
-        }
-
     }
 }
-
-
-
-
